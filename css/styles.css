@@ -76,6 +76,11 @@ menu {
     justify-content: center;
 }
 
+menu .selected {
+    background-color: #fff;
+    color: #000;
+}
+
 menu li {
     /* display: inline-block; */
     width: 10%;
