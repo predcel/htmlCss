@@ -103,8 +103,21 @@ menu a {
     font-size: large;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-gap: 10px;
+table {
+    margin: 10px 5% 10px 5%;
+
+}
+
+thead {
+    background: darkblue;
+    color: #fff;
+    font-size: large;
+}
+
+td {
+    width: 16.5%;
+}
+
+td img {
+    width: 100%;
 }
