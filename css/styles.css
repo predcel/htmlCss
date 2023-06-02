@@ -1,16 +1,35 @@
-/* header{
-
+header {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-footer{
-
+header h1 {
+    font-size: xxx-large;
+    text-align: center;
 }
 
-body{
-    
-} */
+footer {
+    background-color: lightgray;
+    border-radius: 15px;
+    margin: 20px 10% 10px 10%;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+.renglon {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-gap: 10px;
+}
+
 nav {
-    margin: 0;
+    margin: 30px;
     padding: 0;
     box-sizing: border-box;
     font-size: 0;
@@ -22,16 +41,11 @@ menu {
     padding: 0;
     margin-bottom: 0;
     gap: 1em;
-}
-
-menu a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px;
+    justify-content: center;
 }
 
 menu li {
-    display: inline-block;
+    /* display: inline-block; */
     width: 10%;
     padding: 5px 10px;
     background-color: #000;
@@ -43,6 +57,13 @@ menu li {
 menu li:hover {
     background-color: #fff;
     color: #000;
+}
+
+menu a {
+    padding: 5px 25%;
+    text-decoration: none;
+    color: inherit;
+    font-size: large;
 }
 
 .container {
