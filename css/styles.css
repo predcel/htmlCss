@@ -1,11 +1,123 @@
-header{
+header {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: xxx-large;
+    text-align: center;
+}
+
+footer {
+    background-color: lightgray;
+    border-radius: 15px;
+    margin: 20px 10% 10px 10%;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: end;
+    font-size: small;
+}
+
+section,
+article {
+    margin: 20px 10% 10px 10%;
+    padding: 10px;
+}
+
+.renglon5 {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-gap: 5px;
+}
+
+.renglon2 {
+    display: grid;
+    grid-template-columns: repeat(2, 20%);
+    grid-gap: 5px;
+}
+
+
+.imgRedonda {
+    border: 2px solid #000;
+    width: 210px;
+    height: 210px;
+    border-radius: 150px;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.alertCyan {
+    background: cyan;
+    border-radius: 15px;
+}
+
+nav {
+    margin: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+menu {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    gap: 1em;
+    justify-content: center;
+}
+
+menu .selected {
+    background-color: #fff;
+    color: #000;
+}
+
+menu li {
+    /* display: inline-block; */
+    width: 10%;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+}
+
+menu li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+menu a {
+    padding: 5px 25%;
+    text-decoration: none;
+    color: inherit;
+    font-size: large;
+}
+
+table {
+    margin: 10px 5% 10px 5%;
 
 }
 
-footer{
-
+thead {
+    background: darkblue;
+    color: #fff;
+    font-size: large;
 }
 
-body{
-    
+td {
+    width: 16.5%;
+}
+
+td img {
+    width: 100%;
 }
