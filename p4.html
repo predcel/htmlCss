@@ -23,44 +23,44 @@
     </nav>
     <section>
         <p>
-            1. ¿Que ritmo de musica es tu favorito?<br />
+            <label for="r1">¿Que ritmo de musica es tu favorito?</label>
         </p>
         <p>
-            <input type="radio" name="preg1" value="1" /> Salsa<br />
-            <input type="radio" name="preg1" value="2" /> Rock<br />
-            <input type="radio" name="preg1" value="3" /> Kpop<br />
-            <input type="radio" name="preg1" value="4" /> Otro<br />
+            <input type="radio" name="preg1" id="r1" value="1" />
+            <label for="r1">Salsa</label><br>
+            <input type="radio" name="preg1" id="r2" value="2" />
+            <label for="r2">Rock</label><br>
+            <input type="radio" name="preg1" id="r3" value="3" />
+            <label for="r3">Kpop</label><br>
+            <input type="radio" name="preg1" id="r4" value="4" />
+            <label for="r4">Otro</label<br>
         </p>
         <p>
-            2. ¿En tu Pais que música es la mas escuchada?<br />
+            <label for="musicaPais">¿En tu Pais que música es la mas escuchada?</label>
         </p>
         <p>
-            <input type="text">
+            <input class="myInput" type="text" name="musicaPais" id="musicaPais" required>
         </p>
-<p>
-              ¿Qué tipo de música sueles elegir en tus viajes?
-            </p>
-            <p>
-                    <select data-custom="true" data-msg-required="Required field" required="required" name="participation[promo_response_attributes][response_11731]" id="participation_promo_response_attributes_response_11731" aria-required="true" class="step_error">
-                      <option value=""></option>
-                      <option value="Salsa">Salsa</option>
-                      <option value="Rock">Rock</option>
-                      <option value="Kpop">Kpop</option>
-                      <option value="Otro">Otro</option>
-                    </select>
-                </p>
-      </section>
+        <p>
+            <label for="eleccion">¿Qué tipo de música sueles elegir en tus viajes?</label>
+        </p>
+        <p>
+            <select class="myInput" name="eleccion" id="eleccion" required>
+                <option value=""></option>
+                <option value="Salsa">Salsa</option>
+                <option value="Rock">Rock</option>
+                <option value="Kpop">Kpop</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </p>
+        <p>
+            <button class="myButtton">Guardar</button>
+        </p>
+    </section>
 
     <footer>
-        <section>
-            <h5>Autores</h5>
-            <ul>
-                <li>Daniel Castillo</li>
-                <li>Edcel Fuerte</li>
-                <li>Mauricio Vergara</li>
-                <li>Ruben Omar Lopez</li>
-            </ul>
-        </section>
+        <h4>Todos los derechos reservados &copy; 2023 - MusicMatch.com desarrollado por Daniel Castillo - Edcel Fuerte -
+            Ruben Lopez - Mauricio Vergara</h4>
     </footer>
 </body>
 
