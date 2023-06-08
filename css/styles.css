@@ -1,18 +1,33 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #27374D;
+    font-size: 18px;
+    color: #fff;
+}
+
 header {
-    display: grid;
-    grid-template-columns: 150px 200px;
-    grid-gap: 10px;
+    padding-left: 22%;
+    padding-right: 22%;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
 }
 
 header h1 {
     font-size: xxx-large;
-    text-align: center;
+    text-align: center;    
+}
+
+h1{
+    color: #9DB2BF;
+}
+
+h2,h3{
+    color: #DDE6ED;
 }
 
 footer {
-    background-color: lightgray;
+    background-color: #DDE6ED;
     border-radius: 15px;
     margin: 20px 10% 10px 10%;
     display: grid;
@@ -21,6 +36,7 @@ footer {
     align-items: center;
     justify-content: end;
     font-size: small;
+    color: #000;
 }
 
 section,
@@ -33,6 +49,7 @@ article {
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-gap: 5px;
+    text-align: center;
 }
 
 .renglon2 {
@@ -41,6 +58,23 @@ article {
     grid-gap: 5px;
 }
 
+.renglon3 {
+    display: flex;
+    grid-template-columns: repeat(3, 20%);
+    grid-gap: 5px;
+}
+  
+.column{
+    margin-top: 8px;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 0;
+    align-items: center;
+ }
+
+p {
+    padding: 5px;
+}
 
 .imgRedonda {
     border: 2px solid #000;
@@ -56,7 +90,7 @@ figcaption {
 }
 
 .alertCyan {
-    background: cyan;
+    background: #526D82;
     border-radius: 15px;
 }
 
@@ -65,6 +99,7 @@ nav {
     padding: 0;
     box-sizing: border-box;
     font-size: 0;
+   
 }
 
 menu {
@@ -74,6 +109,10 @@ menu {
     margin-bottom: 0;
     gap: 1em;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:  #27374D;
 }
 
 menu .selected {
@@ -105,6 +144,7 @@ menu a {
 
 table {
     margin: 10px 5% 10px 5%;
+    background-color: #526D82;
 
 }
 
@@ -123,9 +163,9 @@ td img {
 }
 
 center {
-    display: block;
-    margin-left: auto;
-    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .myInput {
@@ -151,4 +191,23 @@ center {
 
 .myButtton:hover {
     background-color: #45a049;
+}
+
+.galeriaIV{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.img_resp {
+    width: 100%;
+    height: auto;
+}
+
+.img_tamaño{
+    width: 500px;
+    height: 200px;
 }

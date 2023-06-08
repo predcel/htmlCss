@@ -9,42 +9,33 @@
 
 <body>
     <header>
-        <img src="multimedia/notaMusical.png" alt="notaMusical" width="100" height="100">
-        <h1>Música</h1>
+        <img src="./multimedia/MusicMatch.png" class="img_resp" alt="MusicMatch">  
     </header>
     <nav>
         <menu>
-            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="p1.html">Salsa</a></li>
             <li><a href="p2.html">Rock</a></li>
             <li><a href="p3.html">Kpop</a></li>
             <li class="selected"><a href="p4.html">Encuesta</a></li>
         </menu>
     </nav>
+
     <section>
         <h4>Favor de contestar lo mas honesto posible.</h4>
-        <p>
-            <label for="r1">¿Que ritmo de musica es tu favorito?</label>
-        </p>
-        <p>
-            <input type="radio" name="preg1" id="r1" value="1">
+        <p><label for="r1">¿Que ritmo de musica es tu favorito?</label></p>
+        <p><input type="radio" name="preg1" id="r1" value="1">
             <label for="r1">Salsa</label><br>
             <input type="radio" name="preg1" id="r2" value="2">
             <label for="r2">Rock</label><br>
             <input type="radio" name="preg1" id="r3" value="3">
             <label for="r3">Kpop</label><br>
             <input type="radio" name="preg1" id="r4" value="4">
-            <label for="r4">Otro</label><br>
-        </p>
-        <p>
-            <label for="musicaPais">¿En tu Pais que música es la mas escuchada?</label>
-        </p>
-        <p>
-            <input class="myInput" type="text" name="musicaPais" id="musicaPais" required>
-        </p>
-        <p>
-            <label for="eleccion">¿Qué tipo de música sueles elegir en tus viajes?</label>
-        </p>
+            <label for="r4">Otro</label><br></p>
+
+        <p><label for="musicaPais">¿En tu Pais que música es la mas escuchada?</label></p>
+        <p><input class="myInput" type="text" name="musicaPais" id="musicaPais" required></p>
+        <p><label for="eleccion">¿Qué tipo de música sueles elegir en tus viajes?</label></p>
         <p>
             <select class="myInput" name="eleccion" id="eleccion" required>
                 <option value="">Elija una opcion ...</option>
@@ -54,9 +45,7 @@
                 <option value="Otro">Otro</option>
             </select>
         </p>
-        <p>
-            <button class="myButtton">Guardar</button>
-        </p>
+        <p><button class="myButtton">Guardar</button></p>
     </section>
 
     <footer>
