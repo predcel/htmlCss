@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <img src="./multimedia/MusicMatch.png" class="img_resp" alt="MusicMatch">  
+        <img src="./multimedia/MusicMatch.png" class="img_resp" alt="MusicMatch">
     </header>
     <nav>
         <menu>
@@ -22,30 +22,42 @@
     </nav>
 
     <section>
-        <h4>Favor de contestar lo mas honesto posible.</h4>
-        <p><label for="r1">¿Que ritmo de musica es tu favorito?</label></p>
-        <p><input type="radio" name="preg1" id="r1" value="1">
-            <label for="r1">Salsa</label><br>
-            <input type="radio" name="preg1" id="r2" value="2">
-            <label for="r2">Rock</label><br>
-            <input type="radio" name="preg1" id="r3" value="3">
-            <label for="r3">Kpop</label><br>
-            <input type="radio" name="preg1" id="r4" value="4">
-            <label for="r4">Otro</label><br></p>
+        <form action="">
+            <h4>Favor de contestar lo mas honesto posible.</h4>
+            <p><label for="nombre">Nombre (Opcional)</label></p>
+            <p><input type="text" class="myInput" name="nombre" id="nombre"></p>
 
-        <p><label for="musicaPais">¿En tu Pais que música es la mas escuchada?</label></p>
-        <p><input class="myInput" type="text" name="musicaPais" id="musicaPais" required></p>
-        <p><label for="eleccion">¿Qué tipo de música sueles elegir en tus viajes?</label></p>
-        <p>
-            <select class="myInput" name="eleccion" id="eleccion" required>
-                <option value="">Elija una opcion ...</option>
-                <option value="Salsa">Salsa</option>
-                <option value="Rock">Rock</option>
-                <option value="Kpop">Kpop</option>
-                <option value="Otro">Otro</option>
-            </select>
-        </p>
-        <p><button class="myButtton">Guardar</button></p>
+            <p><label for="fechaNacimiento">Fecha de nacimiento</label></p>
+            <p><input type="date" class="myInput" name="fechaNacimiento" id="fechaNacimiento" required></p>
+
+            <p><label for="telefono">Teleno de contacto (Opcional)</label></p>
+            <p><input type="number" class="myInput" name="telefono" id="telefono" min="1000000000" max="9999999999"></p>
+            <p><label for="correo">Correo</label></p>
+            <p><input type="email" class="myInput" name="correo" id="correo" required></p>
+            <p><label for="r1">¿Que ritmo de musica es tu favorito?</label></p>
+            <p><input type="radio" name="preg1" id="r1" value="1">
+                <label for="r1">Salsa</label><br>
+                <input type="radio" name="preg1" id="r2" value="2">
+                <label for="r2">Rock</label><br>
+                <input type="radio" name="preg1" id="r3" value="3">
+                <label for="r3">Kpop</label><br>
+                <input type="radio" name="preg1" id="r4" value="4" required>
+                <label for="r4">Otro</label><br>
+            </p>
+            <p><label for="musicaPais">¿En tu Pais que música es la mas escuchada?</label></p>
+            <p><input class="myInput" type="text" name="musicaPais" id="musicaPais" required></p>
+            <p><label for="eleccion">¿Qué tipo de música sueles elegir en tus viajes?</label></p>
+            <p>
+                <select class="myInput" name="eleccion" id="eleccion" required>
+                    <option value="">Elija una opcion ...</option>
+                    <option value="Salsa">Salsa</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Kpop">Kpop</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </p>
+            <p><button class="myButtton">Guardar</button></p>
+        </form>
     </section>
 
     <footer>
